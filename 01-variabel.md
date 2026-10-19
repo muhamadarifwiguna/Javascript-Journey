@@ -82,3 +82,12 @@ Ada juga nama-nama yang tidak diperbnolehkan. Misalnya: _let, class, return,_ da
 let let = 5;
 let return = 5;
 ```
+
+## Konstan 
+Untuk mendeklarasi variabel konstan (tak berubah), gunakan *const* ketimbang *let*.Variabel yang dideklarasi menggunakan const disebut “konstan”. Mereka tak bisa diubah. Jika kamu mencoba mengubahnya maka ia menghasilkan error:
+```javascript
+const myBirthday = '18.04.1982';
+
+myBirthday = '01.01.2001'; // error, tak bisa menetapkan-ulang konstan!
+```
+Ketika programmer yakin bahwa variabel tak akan berubah, mereka bisa mendeklarasikan *const* untuk menjamin hal itu dan memberitahu semua orang.
